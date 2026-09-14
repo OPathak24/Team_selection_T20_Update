@@ -15,9 +15,6 @@ def prepare_dataset(match_data):
     rows = []
 
     for match in match_data:
-        if match.get("Result", "").lower() != "win":
-            continue
-
         row = {
             "Match_No": match.get("Match_No"),
             "Opponent": match.get("Opponent"),
